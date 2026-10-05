@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZamWay | Zamboanga City Transit & Tourism Route Guide</title>
+    <meta name="description" content="ZamWay turns Zamboanga City jeepney, bus, and local transit routes into simple step-by-step directions for residents and tourists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logoLink" aria-label="ZamWay Home">
+                <span class="logo-icon"><i class="fa-solid fa-route"></i></span> ZamWay
+            </a>
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#problem">The Purpose</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#journey">User Journey</a></li>
+                    <li><a href="#impact">SDG Impact</a></li>
+                </ul>
+                <a href="#demo" class="btn btn-outline nav-cta">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <div class="badge"><i class="fa-solid fa-compass"></i> For Locals & Visitors in Zamboanga City</div>
+                <h1 class="hero-title">Explore&nbsp;&amp;&nbsp;Commute <br><span class="text-primary">Zamboanga&nbsp;City with&nbsp;Ease.</span></h1>
+                <p class="hero-subtitle">Whether you're a local resident navigating your daily commute or a tourist discovering Fort Pilar, Paseo del Mar, and Pink Sand Beach, ZamWay turns complex jeepney and bus routes into clear, step-by-step directions.</p>
+                <div class="hero-cta">
+                    <a href="#features" class="btn btn-primary">See How It Works</a>
+                    <a href="#journey" class="btn btn-secondary"><i class="fa-solid fa-play"></i> View Tourist Journey</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-up" style="animation-delay: 0.2s;">
+                <!-- CSS Phone Mockup -->
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <div>Where to in Zamboanga?</div>
+                            <div class="app-profile"></div>
+                        </div>
+                        <div class="app-search">
+                            <i class="fa-solid fa-magnifying-glass"></i> Fort Pilar Shrine & Museum
+                        </div>
+                        
+                        <div class="app-route-card active-route">
+                            <div class="route-header">
+                                <span class="route-time">18 min • Heritage Tour</span>
+                                <span class="route-cost">₱26.00</span>
+                            </div>
+                            <div class="route-timeline-mini">
+                                <div class="rt-dot"></div>
+                                <div class="rt-line"></div>
+                                <div class="rt-dot accent"></div>
+                                <div class="rt-line"></div>
+                                <div class="rt-dot"></div>
+                            </div>
+                            <div class="route-steps">
+                                <div>Board Canelar Jeepney</div>
+                                <div class="step-highlight">Transfer at City Hall <i class="fa-solid fa-arrow-right"></i> Paseo Line</div>
+                                <div>Arrive at Fort Pilar</div>
+                            </div>
+                            <button class="app-btn">I'm Riding Now</button>
+                        </div>
+                        
+                        <div class="app-bottom-nav">
+                            <i class="fa-solid fa-map active-icon"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Solution Section -->
+    <section id="problem" class="problem-solution">
+        <div class="container">
+            <div class="ps-grid">
+                <div class="ps-card problem-card fade-up">
+                    <div class="ps-icon"><i class="fa-solid fa-circle-question"></i></div>
+                    <h3>The Travel Challenge</h3>
+                    <ul class="ps-list">
+                        <li><i class="fa-solid fa-xmark"></i> Which jeepney or bus route reaches my destination or tourist spot?</li>
+                        <li><i class="fa-solid fa-xmark"></i> Where are the exact boarding terminals in Zamboanga City?</li>
+                        <li><i class="fa-solid fa-xmark"></i> How much is the exact fare for locals and visitors?</li>
+                        <li><i class="fa-solid fa-xmark"></i> Are routes active during evening hours or festival weekends?</li>
+                    </ul>
+                </div>
+                <div class="ps-card solution-card fade-up" style="animation-delay: 0.2s;">
+                    <div class="ps-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>The ZamWay Solution</h3>
+                    <ul class="ps-list">
+                        <li><i class="fa-solid fa-check"></i> Instantly maps daily commutes & top Zamboanga tourist spots.</li>
+                        <li><i class="fa-solid fa-check"></i> Displays landmark-based boarding points and transfer hubs.</li>
+                        <li><i class="fa-solid fa-check"></i> Calculates total fares upfront so you never overpay.</li>
+                        <li><i class="fa-solid fa-check"></i> Provides live operating status and trip schedules.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Built for Residents & Tourists</h2>
+                <p>Designed around the real navigation questions asked by Zamboanga commuters and visitors.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass fade-up">
+                    <div class="feature-icon"><i class="fa-solid fa-route"></i></div>
+                    <h3>Commute & Tourism Planner</h3>
+                    <p>Calculates the best jeepney, bus, and local transit routes for daily work commutes and famous tourist spots.</p>
+                </div>
+                
+                <div class="feature-card glass fade-up" style="animation-delay: 0.1s;">
+                    <div class="feature-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <h3>Landmark Boarding Points</h3>
+                    <p>Stop guessing. We guide you to recognized landmarks like City Hall, Canelar, and Port Area for boarding.</p>
+                </div>
+                
+                <div class="feature-card glass fade-up" style="animation-delay: 0.2s;">
+                    <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>Transparent Fare Guide</h3>
+                    <p>Upfront fare estimates for every trip leg so both tourists and residents pay exact local rates.</p>
+                </div>
+                
+                <div class="feature-card glass fade-up" style="animation-delay: 0.3s;">
+                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Route Operating Status</h3>
+                    <p>Know if a route is active and check first/last trip schedules for morning commutes or night outings at Paseo.</p>
+                </div>
+                
+                <div class="feature-card glass fade-up" style="animation-delay: 0.4s;">
+                    <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Route Comparison</h3>
+                    <p>Compare travel routes by fare, total time, or transfer count to select the most convenient option.</p>
+                </div>
+                
+                <div class="feature-card glass highlight-card fade-up" style="animation-delay: 0.5s;">
+                    <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
+                    <h3>"I'm Riding Now" Tracker</h3>
+                    <p>Sends real-time arrival alerts so first-time visitors and busy locals never miss their drop-off point.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>How ZamWay Works</h2>
+                <p>3 simple steps to find your ride, check pricing, and never miss your stop.</p>
+            </div>
+            
+            <div class="hiw-grid">
+                <!-- Step 1: Pricing -->
+                <div class="hiw-step fade-up">
+                    <div class="hiw-step-header">
+                        <div class="hiw-step-number">1</div>
+                        <h3>Check Pricing</h3>
+                        <p>Know exactly how much to pay before you ride. No overcharging.</p>
+                    </div>
+                    <div class="phone-mockup static-phone">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div>Fare Guide</div>
+                            </div>
+                            <div class="app-route-card" style="margin-top: 15px;">
+                                <div class="route-header">
+                                    <span class="route-time" style="font-size: 0.95rem;">Regular Fare</span>
+                                    <span class="route-cost">₱13.00</span>
+                                </div>
+                                <div class="route-header" style="margin-bottom: 0;">
+                                    <span class="route-time" style="font-size: 0.95rem;">Student/Senior</span>
+                                    <span class="route-cost">₱11.00</span>
+                                </div>
+                                <button class="app-btn btn-outline" style="color:var(--accent-primary); border-color:var(--accent-primary); font-size: 0.85rem; padding: 8px; margin-top: 20px;">View Fare Matrix</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Landmarks -->
+                <div class="hiw-step fade-up" style="animation-delay: 0.2s;">
+                    <div class="hiw-step-header">
+                        <div class="hiw-step-number">2</div>
+                        <h3>Pick a Landmark</h3>
+                        <p>Search by famous Zamboanga spots like Fort Pilar or Paseo.</p>
+                    </div>
+                    <div class="phone-mockup static-phone">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="app-search" style="margin-top: 15px;">
+                                <i class="fa-solid fa-magnifying-glass"></i> Paseo del Mar
+                            </div>
+                            <div class="app-route-card active-route" style="margin-top: 15px;">
+                                <div class="route-header">
+                                    <span class="route-time">12 min</span>
+                                    <span class="route-cost">₱13.00</span>
+                                </div>
+                                <div class="route-steps">
+                                    <div>Board at City Hall</div>
+                                    <div class="step-highlight"><i class="fa-solid fa-arrow-down"></i> Ride Paseo Jeep</div>
+                                    <div>Arrive at Paseo</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Tracking -->
+                <div class="hiw-step fade-up" style="animation-delay: 0.4s;">
+                    <div class="hiw-step-header">
+                        <div class="hiw-step-number">3</div>
+                        <h3>"I'm Riding Now"</h3>
+                        <p>Activate live tracking and get an alert when it's time to get off.</p>
+                    </div>
+                    <div class="phone-mockup static-phone active-phone">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="app-route-card active-route" style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                                <div style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 15px;">
+                                    <i class="fa-solid fa-location-dot fa-bounce"></i>
+                                </div>
+                                <h4>Approaching Stop</h4>
+                                <p style="font-size: 0.85rem; color: #94A3B8; margin-top: 10px;">Get ready to disembark at Fort Pilar Shrine</p>
+                                <button class="app-btn" style="margin-top: auto;">Stop Tracking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Journey Section -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Sample Tourist & Commuter Journey</h2>
+                <p>Example Trip: KCC Mall to Fort Pilar Shrine & Paseo del Mar Heritage Zone</p>
+            </div>
+            
+            <div class="timeline-container fade-up">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content glass">
+                            <h4>Walk to Terminal</h4>
+                            <p>Walk to the designated jeepney boarding point near KCC Mall.</p>
+                            <span class="cost">Cost: ₱0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content glass">
+                            <h4>Ride City-Loop Jeepney</h4>
+                            <p>Board the City-Loop Jeepney heading toward Zamboanga City Proper.</p>
+                            <span class="cost">Cost: ₱13</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content glass">
+                            <h4>Landmark Transfer</h4>
+                            <p>Get off at the City Hall junction transfer point.</p>
+                            <span class="cost">Cost: —</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content glass">
+                            <h4>Ride Paseo Route</h4>
+                            <p>Take the quick connection to Fort Pilar Shrine & Heritage Park.</p>
+                            <span class="cost">Cost: ₱13</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-summary glass">
+                    <h3>Trip Summary</h3>
+                    <div class="summary-details">
+                        <div><i class="fa-solid fa-bus"></i> 2 Local Rides</div>
+                        <div><i class="fa-solid fa-money-bill-wave"></i> Total: ₱26.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDG Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="impact-content glass fade-up">
+                <div class="impact-text">
+                    <div class="sdg-badge">SDG 11</div>
+                    <h2>Sustainable Cities & Inclusive Tourism</h2>
+                    <p>ZamWay supports sustainable urban growth and eco-tourism in Zamboanga City by making local public transportation accessible and understandable. By empowering both residents and visitors to travel confidently using existing jeepneys and buses, we boost local tourism, support small transport operators, and reduce traffic congestion.</p>
+                </div>
+                <div class="impact-visual">
+                    <div class="sdg-icon"><i class="fa-solid fa-city"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo footer-logo" aria-label="ZamWay Home"><span class="logo-icon"><i class="fa-solid fa-route"></i></span> ZamWay</a>
+                    <p>Making local public transit and tourism routes in Zamboanga City easier to understand. A step-by-step commuting companion for residents and visitors.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>FEATURES</h4>
+                    <ul>
+                        <li><a href="#features">Route Planner</a></li>
+                        <li><a href="#features">Fare Calculator</a></li>
+                        <li><a href="#features">Operating Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>APP</h4>
+                    <ul>
+                        <li><a href="#demo">Join Waitlist</a></li>
+                        <li><a href="#problem">Our Purpose</a></li>
+                        <li><a href="#journey">User Journey</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>LOCATION</h4>
+                    <ul>
+                        <li><a href="mailto:hello@zamway.ph">hello@zamway.ph</a></li>
+                        <li>Zamboanga City, Philippines</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col follow-col">
+                    <h4>FOLLOW US</h4>
+                    <p>Stay connected for fresh updates and new Zamboanga routes.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ZamWay. All rights reserved. | Designed for academic presentation & Zamboanga City tourism guidance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
